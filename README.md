@@ -91,7 +91,8 @@ mkdir -p $HOME/start/node-red
 #
 # start mosquitto
 cd $HOME/start/mosquitto
-nohup mosquitto &
+sv-enable mosquitto
+#nohup mosquitto &
 # start node-red
 cd $HOME/start/node-red
 nohup node-red &
